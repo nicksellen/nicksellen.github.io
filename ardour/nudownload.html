@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head lang="en">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0 minimum-scale=1.0 user-scaleable=no"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Download Ardour | ardour</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="https://community.ardour.org/bootstrap-2.2.2/css/bootstrap.min.css" rel="stylesheet"/>
+
+    <link type="text/css" rel="stylesheet" href="https://community.ardour.org/sites/all/themes/bootpal/app.css" />
+    <link type="text/css" rel="stylesheet" href="https://community.ardour.org/sites/all/themes/bootpal/app-drupal.css" />
+    <link type="text/css" rel="stylesheet" media="all" href="https://community.ardour.org/sites/all/modules/honeypot/css/honeypot.css" />
+
+    <!-- these styles must come between boostrap and bootstrap-responsive -->
+
+    <style type="text/css">
+         body {
+       padding-top: 60px;
+   } 
+
+    </style>
+
+    <style type="text/css">
+      
+      @media screen and (min-width: 1px) and (max-width: 1279px) {
+             .navbar .searchbox {
+                  display: none;
+             }
+      }
+      
+    </style>
+
+    <link href="https://community.ardour.org/bootstrap-2.2.2/css/bootstrap-responsive.css" rel="stylesheet"/>
+    <link href='//fonts.googleapis.com/css?family=Oswald:400|Open+Sans:400,600' rel='stylesheet' type='text/css'/>
+    <script type="text/javascript" src="https://community.ardour.org/misc/jquery.js?G"></script>
+<script type="text/javascript" src="https://community.ardour.org/misc/drupal.js?G"></script>
+<script type="text/javascript" src="https://community.ardour.org/misc/tableheader.js?G"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, { "basePath": "/" });
+//--><!]]>
+</script>
+    
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="http://community.ardour.org/rss.xml" />
+
+  </head>
+
+  <body class="not-front not-logged-in page-nudownload one-sidebar sidebar-left">
+    
+    <div class="navbar navbar-fixed-top navbar-inverse">
+      <div class="navbar-inner">
+  <div class="container-fluid">
+      
+      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+      
+      <a class="brand" href="http://ardour.org/"><img src="https://community.ardour.org/images/ardour_logo_navbar.png" alt="Ardour"/></a>
+      
+      <div class="nav-collapse collapse">
+
+        <div class="nav pull-right searchbox">
+    <form action="http://www.google.com/search" 
+          method="get" onSubmit="Gsitesearch(this)">
+      <input name="q" type="hidden" />
+      <input name="qfront" type="text" style="width: 180px" /> 
+      <input type="submit" class="btn btn-primary" value="Search" />
+    </form>
+        </div>
+
+        <ul class="nav pull-right">
+                <li class="">
+                  <a href="http://ardour.org/download.html">Download</a>
+                </li>
+                <li class="">
+                  <a href="/forums">Forums</a>
+                </li>
+                <li class="">
+                  <a href="http://tracker.ardour.org/">Bug Tracker</a>
+                </li>
+                <li class="">
+                  <a href="http://ardour.org/development.html">Development</a>
+                </li>
+                <li class="main ">
+                  <a href="/node">Blog</a>
+                </li>
+                <li class="">
+                  <a href="/community">Support</a>
+            </ul>
+
+      </div><!-- nav-collapse -->
+  </div><!-- container -->
+      </div><!-- navbar-inner -->
+    </div><!-- navbar -->
+    
+    <div id="content">
+  <div class="container-fluid">
+    <div class="row-fluid">
+      
+      <div class="span2">
+                <div id="sidebar-left" class="column sidebar">
+    <div id="block-user-0" class="block block-user">
+  <h2>User login</h2>
+
+  <div class="content">
+    <form action="/nudownload?destination=nudownload"  accept-charset="UTF-8" method="post" id="user-login-form">
+<div><div class="form-item" id="edit-name-wrapper">
+ <label for="edit-name">Username: <span class="form-required" title="This field is required.">*</span></label>
+ <input type="text" maxlength="60" name="name" id="edit-name" size="15" value="" class="form-text required" />
+</div>
+<div class="form-item" id="edit-pass-wrapper">
+ <label for="edit-pass">Password: <span class="form-required" title="This field is required.">*</span></label>
+ <input type="password" name="pass" id="edit-pass"  maxlength="60"  size="15"  class="form-text required" />
+</div>
+<input type="submit" name="op" id="edit-submit" value="Log in"  class="form-submit" />
+<div class="item-list"><ul><li class="first"><a href="/user/register" title="Create a new user account.">Create new account</a></li>
+<li class="last"><a href="/user/password" title="Request new password via e-mail.">Request new password</a></li>
+</ul></div><input type="hidden" name="form_build_id" id="form-0e71e5e3714101ec94f759b073f8bb65" value="form-0e71e5e3714101ec94f759b073f8bb65"  />
+<input type="hidden" name="form_id" id="edit-user-login-block" value="user_login_block"  />
+
+</div></form>
+  </div>
+</div>
+<div id="block-user-1" class="block block-user">
+  <h2>Navigation</h2>
+
+  <div class="content">
+    <ul class="menu"><li class="leaf first last"><a href="/tracker">Recent posts</a></li>
+</ul>  </div>
+</div>
+              </div> <!-- /sidebar-left -->
+                    </div>
+
+      <div class="span8">
+
+                <h1 class="section-header">Download Ardour</h1>
+                                                  
+        <noscript>
+  <div class="error center huge">
+    This form requires JavaScript. Please enable it or use
+    the <a href="?list=">Static Page</a>
+  </div>
+</noscript>
+
+<script src="https://community.ardour.org/scripts/dl.js"></script>
+
+<script>
+  set_release(8.2);
+</script>
+
+<div>on linux</div>
+<form id="download">
+
+
+  <div id="choices">
+
+    <div id="os" class="row-fluid form-inline span12 block-center">
+      <legend id="l_os">Select the operating system you will run Ardour on</legend>
+      <div id="ro_lnx" class="outlined checked" style="display:inline">
+  <label class="radio-inline"><img src="https://community.ardour.org/images/linux-icon.png" alt=""/>
+    <input type="radio" name="os" value="linux" onChange="handle_os(this);"  />
+    GNU/Linux
+  </label>
+      </div>
+
+      <div id="ro_win" class="outlined" style="display:inline">
+  <label class="radio-inline"><img src="https://community.ardour.org/images/windows-logo.png" alt=""/>
+    <input type="radio" name="os" value="windows" onChange="handle_os(this);" />
+    Windows
+  </label>
+      </div>
+      
+      <div id="ro_osx" class="outlined" style="display:inline">
+  <label class="radio-inline"><img src="https://community.ardour.org/images/apple-logo.png" alt=""/>
+    <input type="radio" name="os" value="osx" onChange="handle_os(this);"  />
+    Mac/OSX
+  </label>
+      </div>
+
+      <div class="alert alert-info" id="n_linux" style="display:none;">
+  <p>
+    Compatible with any Intel platform GNU/Linux releases
+    since circa 2009 (glibc 2.2.5 or any later version).
+    Requires X11.
+  </p>
+      </div>
+
+      <div class="alert alert-info" id="n_windows" style="display:none;">
+  <p>
+    Compatible with Windows XP and any later version.
+  </p>
+      </div>
+
+      <div class="alert alert-info" id="n_macosx" style="display:none;">
+  <p>
+    Mac/OSX Compatible with OS X Leopard (10.5) or any later version.
+  </p>
+      </div>
+
+    </div>
+
+    <div id="gccabi" class="row-fluid form-inline span12 block-center" style="display:none;">
+      <legend id="l_gccabi">Compiler Interface</legend>
+
+      <label for="rf_gcc4">
+  <input type="radio" name="gccabi" value="" id="rf_gcc4" onChange="handle_gcc(this);" checked="checked"/>&nbsp;gcc4 (Correct for most people)
+      </label>
+      <label for="rf_gcc5">
+  <input type="radio" name="gccabi" value="gcc5" id="rf_gcc5" onChange="handle_gcc(this);" />&nbsp;gcc5
+      </label>
+
+      <dl class="coll">
+  <dt>Should I care about this?</dt>
+  <dd>
+    <div class="note" id="gccinfo">
+      <p>
+        In April 2015, version 5.1 of the GNU C Compiler changed
+        the C++11 interface in an incompatible way.
+      </p>
+      <p><strong>Ardour</strong> itself <strong> is not
+    affected</strong>, but the combination of
+        some <strong>plugins</strong> and Ardour is. If you are
+        using a GNU/Linux distribution that compiles plugins with
+        the new gcc5 C++11 ABI, choose gcc5.
+      </p>
+      <p>
+        <strong>If you do not know</strong>,
+        use <strong>gcc4</strong>.
+      </p>
+      <dl class="coll">
+        <dt>More Information...</dt>
+        <dd>
+    <small>This is only relevant for a dozen 3rd
+      party plugins which directly or indirectly use C++11
+      features.<br/>Known affected
+      plugins:
+      <em>abgate</em>,
+      <em>ams-lv2</em>,
+      <em>amsynth</em>,
+      <em>beatslash</em>,
+      <em>deteriorate</em>,
+      <em>eq10q</em>,
+      <em>guitarix</em>,
+      <em>ingen</em>,
+      <em>midimsg</em>,
+      <em>newtonator</em>,
+      <em>triceratops</em>,
+      <em>vocproc</em>.
+    </small>
+        </dd>
+      </dl>
+    </div>
+  </dd>
+      </dl>
+    </div>
+
+    <div id="architecture" class="row-fluid span12 block-center" style="display:none">
+      <legend id="l_arch">Select Your System Architecture</legend>
+      <label for="ra_i386">
+  <input type="radio" name="arch" value="i386" id="ra_i386" onChange="handle_arch(this);" />&nbsp;Intel compatible, 32 bit
+      </label>
+      <label for="ra_x86_64">
+  <input type="radio" name="arch" value="x86_64" id="ra_x86_64" onChange="handle_arch(this);" />&nbsp;Intel compatible, 64 bit
+      </label>
+      <p>
+  <div class="alert alert-info" id="win64" style="display:none;">
+    The 64bit
+    Version will only load 64bit VSTs. If you have 32bit VST
+    plugins, choose the 32bit version which will also work on 64bit
+    Windows.
+  </div>
+  <div class="alert alert-info" id="osx64" style="display:none;">
+    64bit Version does <strong>not</strong> support plugin-GUIs of
+    old 32-bit Carbon Audio-units. If you have 32bit only plugins,
+    please use the 32bit version (which also runs on 64bit OSX).
+  </div>
+      </p>
+    </div>
+
+  
+    <div id="warnings" class="row-fluid span12 block-center" style="display:none">
+      <div id="w_linux" style="display:none" class="alert alert-danger download-alert col-centered">You will be downloading for GNU/Linux</div>
+      <div id="w_windows" style="display:none" class="alert alert-danger download-alert col-centered"> You will be downloading for Windows</div>
+      <div id="w_osx" style="display:none" class="alert alert-danger download-alert col-centered"> You will be downloading for OS X</div>
+    </div>
+
+  </div> <!-- end of choices -->
+
+<div class="row-fluid btn btn-primary btn-large span12 block-center" id="download_button" style="display:none" onClick="choices_made()">Next&nbsp;&nbsp;<i class="icon-arrow-right icon-white"></i></div>
+
+<div id="legal" class="row-fluid span12 block-center">
+  <div class="disclaimer">
+    Ardour is licensed in terms of the
+    <a rel="external" onclick="this.target='_blank';" href="https://www.gnu.org/licenses/gpl-2.0.html">GNU General
+      Public License</a> as published by the Free Software Foundation;
+    either version 2, or (at your option) any later version.  This
+    program is distributed in the hope that it will be useful, but
+    WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+    General Public License for more details.
+  </div>
+
+  <div class="disclaimer">
+    The Windows, Apple and Linux names and logos visible on this site
+    are trademarks or registered trademarks in the USA and other
+    countries, respectively of Microsoft, Inc., Apple, Inc., and Linus
+    Torvalds.
+  </div>
+</div>
+
+<div id="change_choices" style="display:none">
+  <button type="submit"class="btn btn-primary btn-small" onClick="back_to_choices()">
+    Change my download choice&nbsp;&nbsp;<i class="icon-arrow-left icon-white"></i>
+  </button>
+</div>
+
+<div id="payment" style="display:none" class="row-fluid span12 block-center">
+
+<div id="new_download">
+  <p>
+      Ardour is free software, but we mean "free" in the sense of "libre", not
+      the word "gratis". You can always get the program without paying, but this
+      involves building it from the <a href="/source_code">source code</a>,
+      copying it from a friend or (for Linux users) getting a copy from a
+      package repository.
+    </p>
+  <p>
+    Ardour has been under development for 16 years, and we have lots to do both
+    in terms of major <a href="/roadmap">new features</a>, workflow improvements
+    and <a href="http://tracker.ardour.org">bug fixes</a>. We'd
+    appreciate you being one of the wonderful people who helps to make this work
+    possible. Programmers need to eat too.
+  </p>
+  <p>
+    <dl class="coll">
+      <dt>See the differences between Paid and Free</dt>
+      <dd><div class="alert alert-info" role="alert">
+    <h3>Subscribe for $1, $4 or $10 per month</h3>
+    <p>
+      All software features available. Updates and downloads
+      for as long as your subscription continues. Access to
+      our nightly builds is included.
+    </p>
+    <h3>Single Payment</h3>
+    <p>
+      If you pay $45 or more, benefits are the same as for a subscription.
+    </p>
+    <p>
+      If you pay less than $45,
+      you will get all software features, but only minor updates (e.g. buy version 4.5 for $10, get access to 4.7 and 4.8
+      but not 5.0). No access to nightly builds.
+    </p>
+    <h3>Free/Demo version</h3>
+    <p>
+      All software features are available. Periodically goes silent after 10
+      minutes. No updates, no re-downloading.
+    </p>
+    </div>
+      </dd>
+    </dl>
+    </p>
+
+  <div id="payment_step1">
+    <p>
+      <div id="will_pay" class="btn btn-primary btn-large" onClick="will_pay()">I'll pay something</div>
+      <a id="gratis" class="btn btn-primary btn-large" href="/b/gratis">I want a free/demo version</a>
+    </p>
+  </div>    
+
+  <div id="payment_step2" style="display:none">
+<p>
+  <a id="will_subscribe" class="btn btn-secondary btn-large" href="/subscribe">I'd like to become a subscriber</a>
+  <a id="single_pay" class="btn btn-primary btn-large" onClick="show_amount()">I'll make a single payment</a>
+</p>
+  </div>
+  
+  <fieldset id="payment_bits">
+    
+  </fieldset>
+    
+    <!-- need this in here to avoid JS error -->
+    
+    <div style="display:none" id="release_string"></div>
+
+
+
+</div>
+</div>
+</form>
+      </div>
+
+      <div class="span2">
+              </div>
+    </div>
+  </div>
+      </div>
+
+      <footer>
+  <div class="container">
+    <div class="row">
+      <div class="span4">
+        <p>
+    <a href="http://webchat.freenode.net/?channels=ardour" rel="tooltip" title="Chat with Ardour developers &amp; users"><code>#ardour</code> at <code>irc.freenode.net</code></a>
+        </p>
+        <p>
+    <a href="http://webchat.freenode.net/?channels=ardour-osx" rel="tooltip" title="Chat with Ardour developers &amp; users about Ardour on OS X"><code>#ardour-osx</code> at <code>irc.freenode.net</code></a>
+        </p>
+      </div>
+      <div class="span4">
+
+        <ul class="unstyled">
+
+    <li><a href="http://ardour.org/download.html">Downloads</a></li>
+
+    <li><a href="http://manual.ardour.org">The Ardour Manual</a></li>
+    <li><a href="http://en.flossmanuals.net/Ardour/Introduction">Ardour/FLOSS Tutorial Manual</a></li>
+
+
+    <li><a href="http://lists.ardour.org/listinfo.cgi/ardour-users-ardour.org">User Mailing List</a></li>
+    <li><a href="http://ardour.org/support_expectations.html">Support Expectations</a></li>
+
+    
+        </ul>
+      </div>
+
+      <div class="span4">
+        <ul class="unstyled">
+    <li><a href="http://lists.ardour.org/listinfo.cgi/ardour-dev-ardour.org">Developer Mailing List</a></li>
+    <li><a href="http://lists.ardour.org/listinfo.cgi/ardour-cvs-ardour.org">Commit Mailing List</a></li>
+
+    <li><a href="http://tracker.ardour.org/">Bug Tracker</a></li>
+    <li><a href="mailto:help@ardour.org">help@ardour.org</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="span4 offset8">
+
+        <p>
+    <div id="footer-message">Copyright (C) 2006-2015 Paul Davis (<a href="/credits">Credits</a>)</div>
+        </p>
+      </div>
+    </div>
+  </div>
+      </footer>
+
+            
+          </div>
+  </body>
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+  <script src="https://community.ardour.org/bootstrap-2.2.2/js/bootstrap.js"></script>
+  <script type="text/javascript">
+    $(function(){
+
+    $('a[rel=tooltip]').tooltip();
+    $('div[rel=tooltip]').tooltip();
+
+    var faqs = $('dl.faq').addClass('active');
+
+    $('> dd', faqs).hide();
+
+    $('> dt', faqs).click(function(e){ 
+    var $dt = $(e.target),
+    $dd = $dt.next('dd');
+
+    if ($dd.is(':visible')) {
+    $dd.hide().removeClass('active');
+    $dt.removeClass('active');
+    } else {
+    $dd.show().addClass('active');
+    $dt.addClass('active');
+    }
+    });
+
+    var colls = $('dl.coll').addClass('active');
+
+    $('> dd', colls).hide();
+
+    $('> dt', colls).click(function(e){ 
+    var $dt = $(e.target),
+    $dd = $dt.next('dd');
+
+    if ($dd.is(':visible')) {
+    $dd.hide().removeClass('active');
+    $dt.removeClass('active');
+    } else {
+    $dd.show().addClass('active');
+    $dt.addClass('active');
+    }
+    });
+
+    $('.in-page-menu a').click(function(e){ 
+
+    var href = e.target.href,
+    fragment = href.split('#')[1];
+
+    if (fragment) {
+    var anchor = $('#' + fragment);
+    if (anchor) {
+    var top = anchor.offset().top,
+    pos = top - 170;
+    $('html, body').animate({ scrollTop: pos }, { duration: 100 });
+    return false;
+    }
+    }
+    return true;
+    });
+
+
+    setTimeout(function(){
+    var fragment = location.hash.split('#')[1];
+
+    if (fragment) {
+    var anchor = $('#' + fragment) || $('*[name=' + fragment + ']');
+    if (anchor) {
+    var scrollTo = anchor.offset().top - parseInt($('body').css('padding-top'), 10);
+    $('html, body').animate({ scrollTop: scrollTo }, { duration: 0 });
+    }
+    }
+    }, 20);
+    });
+  </script>
+
+</html>
+
