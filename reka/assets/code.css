@@ -1,0 +1,50 @@
+.code_text { 
+    font-family: "Monaco", "Monospace", "Courier", Monospace;
+    font-size: 22px;
+    line-height: 29px;
+}
+.code_page { background-color: #272822; }
+.code_gutter { display: table-cell; background-color: #272822; padding-right: 10px; }
+
+.code-container pre { border: 0; margin: 0; padding: 0; }
+.code-container td { padding: 0; }
+.code-container table { border: 0; margin: 0; padding: 0; border-collapse: collapse; empty-cells: show; }
+.code-container td.code_line div { width: 100%; }
+.code-container span { display: inline-block; border: 0; margin: 0; }
+.code-container span.bold { font-weight: bold; }
+.code-container span.italic { font-style: italic; }
+.code-container span.normal { font-style: normal; }
+.code-container span.underline { text-decoration:underline; }
+
+/* Wrapping */
+.code-container div.wrap {
+    white-space: -moz-pre-wrap; /* Mozilla */
+    white-space: -hp-pre-wrap;  /* HP printers */
+    white-space: -o-pre-wrap;   /* Opera 7 */
+    white-space: -pre-wrap;     /* Opera 4-6 */
+    white-space: pre-wrap;      /* CSS 2.1 */
+    white-space: pre-line;      /* CSS 3 (and 2.1 as well, actually) */
+    word-wrap: break-word;      /* IE */
+}
+.code-container div.wrap span { display: inline; }
+
+.code-container div.table_footer { text-align:right; font-size: 8pt; font-weight: bold;}
+.code-container a.table_close { color: black; float: right; }
+.code-container a.table_close:link { text-decoration: none; }
+.code-container a.table_close:active { text-decoration: none; }
+.code-container a.table_close:visited { text-decoration: none; }
+.code-container a.table_close:hover { text-decoration: none; }
+.code-container table#comment_table th, table#comment_table td { border: thin solid; padding: 5px; }
+.code-container td.annotation_link { width: 60px; text-align: right; padding-right: 20px; }
+.code-container .annotation_comment { width: 500px; }
+.code-container div.annotation_comment {
+    float: left;
+    text-align: left;
+    white-space: -moz-pre-wrap; /* Mozilla */
+    white-space: -hp-pre-wrap;  /* HP printers */
+    white-space: -o-pre-wrap;   /* Opera 7 */
+    white-space: -pre-wrap;     /* Opera 4-6 */
+    white-space: pre-wrap;      /* CSS 2.1 */
+    white-space: pre-line;      /* CSS 3 (and 2.1 as well, actually) */
+    word-wrap: break-word;      /* IE */
+}
