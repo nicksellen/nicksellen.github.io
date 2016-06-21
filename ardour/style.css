@@ -17,11 +17,6 @@ table {
   flex-direction: column;
   align-content: flex-start;
   height: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  overflow: auto;
 }
 
 .container > div {
@@ -95,3 +90,4 @@ td:nth-child(1) {
 .container > div:nth-child(3) tr:nth-child(odd) td {
   background-color: rgba(57, 204, 204, 0.1);
 }
+
