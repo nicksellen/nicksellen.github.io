@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf8">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Inconsolata|Raleway:300" rel="stylesheet" type="text/css">
+    <link href="/style.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div class="container">
+      <section>
+        <h1>adm</h1>
+        <h2>Custom and dynamic admin interface</h2>
+        <p>Why would I need it?</p>
+        <ul>
+          <li>a non-tech person needs to perform tasks that are usually only accessible via command line</li>
+          <li>a tech person can access data and perform tasks in a safe, easy, audited way - all in one place</li>
+          <li>you can't justify building a UI</li>
+        </ul>
+        <p>Example use cases:</p>
+        <ul>
+          <li>provide buttons to clear a cache inside your app</li>
+          <li>present a simple way to browse/edit your database</li>
+          <li>embed as a lib inside your app, and show currently connected users</li>
+          <li>store useful SQL/db queries so anyone can run them</li>
+          <li>present a simple UI for an API</li>
+        </ul>
+        <p class="tryit"><a href="https://adm.nicksellen.co.uk">Try it &rarr;</a></p>
+      </section>
+      <div class="img shadow"><img src="/images/adm1c.png"></div>
+
+      <section>
+        <h2>Architecture</h2>
+        <p>
+          Server accepts websocket connections from browser, and TCP connections
+          from agent runner. Both secured with TLS.
+        </p>
+        <p>I run server, you run agent runner.</p>
+      </section>
+      <div class="img"><img src="/images/adm.svg"></div>
+      <section>
+        <h2>Configuration</h2>
+        <p>Uses toml.</p>
+        <pre><code class="ini">[runner]
+
+id = "runner-1"
+name = "My First Runner"
+
+host = "adm.nicksellen.co.uk"
+port = 8000
+
+account = "test"
+
+keys = [
+  "a369829c7258e63dc0164e3369f12637fda869fe",
+]
+
+[my-first-agent]
+
+name = "My First Agent"
+type = "example"</code></pre>
+      </section>
+      <section>
+        <p class="tryit"><a href="https://adm.nicksellen.co.uk">Try it &rarr;</a></p>
+      </section>
+    </div>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/highlight.min.js"></script>
+    <script>hljs.initHighlighting();</script>
+  </body>
+</html>
