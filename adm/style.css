@@ -12,7 +12,7 @@ a {
 }
 
 p, ul {
- line-height: 20px;
+ line-height: 22px;
 }
 
 ul {
@@ -29,6 +29,10 @@ ul {
 h1 {
   color: #DF3D82;
   font-family: Inconsolata;
+}
+
+.accent {
+  color: #00BEF2;
 }
 
 h2, h3 {
@@ -72,7 +76,7 @@ section {
 code.hljs {
   display: block;
   padding: 20px;
-  border: 1px solid #DF3D82;
+  border: 1px solid #00BEF2;
 }
 
 .hljs-string {
