@@ -9,12 +9,19 @@
   <body>
     <div class="container">
       <section>
-        <h1>adm</h1>
+        <h1>adm <span class="noname">&larr; shhh that is not the real name yet</span></h1>
         <h2>Custom and dynamic admin interface</h2>
+        <p>
+          You run agents on your infrastructure. They connect via secure TCP to the hosted service.
+        </p>
+        <p>
+          They are able to present lists views, detail views, and perform actions through a nice clean web UI.
+        </p>
         <p>Why would I need it?</p>
         <ul>
           <li>a non-tech person needs to perform tasks that are usually only accessible via command line</li>
-          <li>a tech person can access data and perform tasks in a safe, easy, audited way - all in one place</li>
+          <li>a tech person wants to access data and perform tasks in a safe, easy, audited way</li>
+          <li>you want all your data and admin tasks available from one place</li>
           <li>you can't justify building a UI</li>
         </ul>
         <p>Example use cases:</p>
@@ -27,7 +34,11 @@
         </ul>
         <p class="tryit"><a href="https://adm.nicksellen.co.uk">Try it &rarr;</a></p>
       </section>
-      <div class="img shadow"><img src="images/adm1c.png"></div>
+      <div class="img shadow">
+        <a href="images/adm1c.png">
+          <img src="images/adm1c.png" title="I wish I had my mac still, the screenshots always looked much nicer on that...">
+        </a>
+      </div>
 
       <section>
         <h2>Architecture</h2>
@@ -61,6 +72,24 @@ name = "My First Agent"
 type = "example"</code></pre>
       </section>
       <section>
+        <h2>Roadmap / Status</h2>
+        <p>
+          It's very new, I just made it. It's only a proof-of-concept for now.
+          I didn't even give it a name or buy a domain for it.
+        </p>
+        <p>Things it might do one day:</p>
+        <ul>
+          <li>present information other than lists and details - graphs, images, etc</li>
+          <li>create custom panels with your favourite views</li>
+          <li>auto-refresh content</li>
+          <li>provide a REST API and/or CLI tool</li>
+          <li>connect with hosted services via oAuth - no need to run your own agents</li>
+        </ul>
+        <p>
+          I want to see if anybody wants it first.
+          Hit me up at <a href="mailto:hello@nicksellen.co.uk">hello@nicksellen.co.uk</a>
+          if you're interested!
+        </p>
         <p class="tryit"><a href="https://adm.nicksellen.co.uk">Try it &rarr;</a></p>
       </section>
     </div>
