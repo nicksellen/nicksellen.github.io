@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <head>
+      <script src="https://unpkg.com/vue@2.5.16/dist/vue.min.js"></script>
+      <script src="https://unpkg.com/quasar-framework@^0.16.0/dist/umd/quasar.mat.umd.min.js"></script>
+      <script type="text/javascript">
+
+        const ready = Quasar.utils.dom.ready
+
+        ready(() => {
+          console.log('this one works')
+        })
+
+        document.addEventListener('readystatechange', () => {
+          if (document.readyState === 'interactive') {
+            ready(() => {
+              console.log('as does this one')
+            })
+            requestAnimationFrame(() => {
+              ready(() => {
+                console.log('this is never called though')
+              })
+            })
+          } else if (document.readyState === 'complete') {
+            ready(() => {
+              console.log('this one too is fine')
+            })
+          }
+        })
+      </script>
+  </head>
+</html>
